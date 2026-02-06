@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ping Posting Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 500px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Ping Posting – Home Insurance</h2>
+
+  <form method="POST" action="https://evolvetech-innovations.trackdrive.com/api/v1/leads">
+    
+    <!-- REQUIRED FIELDS -->
+    <label>Lead Token</label>
+    <input type="text" name="lead_token" value="869d536f6e014778b299c172665e10ce" required>
+
+    <label>Traffic Source ID</label>
+    <input type="text" name="traffic_source_id" value="1150" required>
+
+    <label>Caller ID (Phone Number)</label>
+    <input type="text" name="caller_id" placeholder="+17195551234" required>
+
+    <label>ZIP Code</label>
+    <input type="text" name="zip" placeholder="02139" required>
+
+    <!-- OPTIONAL / RECOMMENDED -->
+    <label>State</label>
+    <input type="text" name="state" placeholder="CA">
+
+    <label>City</label>
+    <input type="text" name="city" placeholder="Los Angeles">
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="lead@example.com">
+
+    <label>Sub ID</label>
+    <input type="text" name="sub_id" placeholder="affiliate123">
+
+    <label>Source URL</label>
+    <input type="text" name="source_url" placeholder="https://yourwebsite.com">
+
+    <button type="submit">Send Ping</button>
+  </form>
+</div>
+
+</body>
+</html>
