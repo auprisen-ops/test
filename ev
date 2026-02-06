@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvolveTech Lead Form</title>
+</head>
+<body>
+    <h2>Submit Lead to EvolveTech Innovations</h2>
+    
+    <form id="leadForm" method="POST" action="https://evolvetech-innovations.trackdrive.com/api/v1/leads">
+        <!-- Static required values -->
+        <input type="hidden" name="lead_token" value="869d536f6e014778b299c172665e10ce" />
+        <input type="hidden" name="traffic_source_id" value="1150" />
+
+        <!-- User input fields -->
+        <label>
+            Caller Phone Number:<br />
+            <input type="text" name="caller_id" placeholder="+17194451111" required />
+        </label>
+        <br /><br />
+
+        <label>
+            Zip Code:<br />
+            <input type="text" name="zip" placeholder="Enter ZIP" />
+        </label>
+        <br /><br />
+
+        <label>
+            State (Two-Letter Code):<br />
+            <input type="text" name="state" placeholder="e.g., NY" />
+        </label>
+        <br /><br />
+
+        <label>
+            City:<br />
+            <input type="text" name="city" placeholder="City name" />
+        </label>
+        <br /><br />
+
+        <label>
+            Email:<br />
+            <input type="email" name="email" placeholder="email@example.com" />
+        </label>
+        <br /><br />
+
+        <!-- Add other fields as needed -->
+        
+        <button type="submit">Submit Lead</button>
+    </form>
+
+</body>
+</html>
